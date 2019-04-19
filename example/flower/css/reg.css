@@ -1,0 +1,111 @@
+@charset "UTF-8";
+body, h1, h2, h3, h4, h5, h6, ol, ul, dl, dd, p, input, select, textarea, td {
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 26.67vw; }
+
+body {
+  font-family: "微软雅黑";
+  /*position: relative;*/ }
+
+a {
+  text-decoration: none; }
+
+ul,
+ol {
+  list-style: none; }
+
+img {
+  border: 0;
+  display: block; }
+
+html,
+body {
+  height: 100%; }
+
+i {
+  font-style: normal; }
+
+header {
+  display: flex;
+  width: 100%;
+  padding: .12rem .12rem;
+  box-sizing: border-box;
+  align-items: center;
+  background: #fff; }
+  header img {
+    width: .12rem;
+    height: .24rem;
+    margin-right: 1.28rem;
+    vertical-align: middle; }
+  header span {
+    font-size: .16rem; }
+
+section {
+  padding: 0 .16rem; }
+  section .title {
+    width: 1.92rem;
+    height: .25rem;
+    margin: .12rem auto .44rem;
+    font-size: .22rem;
+    text-align: center; }
+
+.phone {
+  display: flex;
+  border-bottom: 1px solid #e9ecf0; }
+  .phone input {
+    width: 2.95rem;
+    height: .44rem;
+    padding: 0 .46rem 0 .02rem;
+    outline: none;
+    color: #232628;
+    font-size: 14px;
+    border: 0; }
+
+.yzm {
+  display: flex;
+  margin-top: .08rem;
+  border-bottom: 1px solid #e9ecf0; }
+  .yzm input {
+    width: 2.23rem;
+    height: .44rem;
+    padding: 0 .46rem 0 .02rem;
+    outline: none;
+    color: #232628;
+    font-size: 14px;
+    border: 0; }
+  .yzm span {
+    color: #71797f;
+    font-size: .13rem;
+    line-height: .44rem; }
+
+.pass {
+  display: flex;
+  margin-top: .08rem;
+  border-bottom: 1px solid #e9ecf0; }
+  .pass input {
+    width: 2.70rem;
+    height: .44rem;
+    padding: 0 .46rem 0 .02rem;
+    outline: none;
+    color: #232628;
+    font-size: 14px;
+    border: 0; }
+  .pass span {
+    color: #71797f;
+    font-size: .34rem;
+    line-height: .44rem;
+    float: right; }
+
+.login {
+  height: .46rem;
+  text-align: center;
+  line-height: .46rem;
+  font-size: .15rem;
+  color: #fff;
+  background: #ff734c;
+  border-radius: .23rem;
+  margin-top: .45rem;
+  box-shadow: 0 .03rem .06rem 0 #ff734c; }

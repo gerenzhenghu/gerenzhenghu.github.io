@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+    <link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+    <link rel="stylesheet" type="text/css" href="css/table.css"/>
+    <link rel="stylesheet" type="text/css" href="css/chart.css"/>
+</head>
+<body>
+    <!-- header -->
+    <div class="header">
+        <div class="header-left">
+            <p>Bootstrap<span>Dashboard</span></p>
+            <img class="show" src="img/img1.png" alt="">
+        </div>
+        <div class="header-right">
+            <a href="##" class="iconfont icon-sousuo"></a>
+            <a href="##" class="iconfont icon-lingdang"></a>
+            <a href="##" class="iconfont icon-xinfeng"></a>
+            <p>
+                <img src="img/img2.png" alt="">
+                <span>English</span>
+                <img src="img/img3.png" alt="">
+            </p>
+            <p class="logout">Logout<a href="##" class="iconfont icon-tuichu"></a></p>
+            
+        </div>
+    </div>
+    <!-- section -->
+    <div class="section">
+        <div class="section-left">
+            <div class="sidebar">
+                <div class="avatar">
+                    <img src="img/avatar-1.jpg" alt="">
+                </div>
+                <div class="title">
+                    <h4>Mark Stephen</h4>
+                    <p>Web Designer</p>
+                </div>
+            </div>
+            <span class="heading">MAIN</span>
+            <ul>
+                <li><a href="index.html" class="iconfont icon-home"><span>Home </span></a></li>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+                <li><a href="table.html" class="iconfont icon-biaoge"><span>Tables </span></a></li>
+                <li><a href="chart.html" class="iconfont icon-pingtaitubiao_zhuzhuangtu"><span>Charts </span></a></li>
+                <li><a href="from.html" class="iconfont icon-wpforms"><span>Forms </span></a></li>
+                <li><a href="##" class="iconfont icon-example"><span>Examplo dropdown </span></a></li>
+                <li><a href="login.html" class="iconfont icon-example"><span>Login page </span></a></li>
+            </ul>
+            <span class="heading">Extras</span>
+            <ul>
+                    <li><a href="demo.html" class="iconfont icon-pingzi"><span>Demo </span></a></li>
+                    <li><a href="##" class="iconfont icon-ping"><span>Demo </span></a></li>
+                    <li><a href="##" class="iconfont icon-xinfeng"><span>Demo </span></a></li>
+                    <li><a href="##" class="iconfont icon-zhaopian"><span>Demo </span></a></li>
+                </ul>
+        </div>
+        <!-- right -->
+        <div class="section-right">
+            <!-- right header -->
+            <h2 class="section-right-header">Table</h2>
+            <div class="link">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>Table</li>
+                </ul>
+            </div>
+            <!-- right section -->
+            <section class="dashboard-counts">
+                <div class="basic">
+                    <div class="basic-left">
+                        <div class="trend-title">
+                            <div class="tr hour">
+                                <h3>Basic Table</h3>
+                                <!-- <div class="bagde">4 New</div> -->
+                                <img class="close" src="img/img14.png" alt="">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div id="line-chart">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="basic-right">
+                        <div class="trend-title">
+                            <div class="tr hour">
+                                <h3>Striped Table</h3>
+                                <!-- <div class="bagde">4 New</div> -->
+                                <img class="close" src="img/img14.png" alt="">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div id="line1-chart">
+                                
+                            </div>
+                            <div id="line2-chart">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="basic effect">
+                        <div class="basic-left bar-left">
+                            <div class="trend-title">
+                                <div class="tr hour">
+                                    <h3>Striped table with hover effect</h3>
+                                    <!-- <div class="bagde">4 New</div> -->
+                                    <img class="close" src="img/img14.png" alt="">
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div id="bar1-chart">
+
+                                </div>
+                                <div id="bar2-chart">
+
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="basic-right bar-right">
+                            <div class="trend-title">
+                                <div class="tr hour">
+                                    <h3>Compact Table</h3>
+                                    <!-- <div class="bagde">4 New</div> -->
+                                    <img class="close" src="img/img14.png" alt="">
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div id="bar"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    <!-- footer -->
+        <div class="footer">
+            <p>Copyright © 2019.Company name All rights reserved.<a href="##">网页模板</a></p>
+            
+        </div>  
+    </div>
+</div>    
+</body>
+</html>
+<script src="js/jquery-1.8.3.js"></script>
+<script src="js/echarts.js"></script>
+<script src="js/index.js"></script>
+<script>
+    var zhu=echarts.init(document.getElementById("line-chart"));
+    var zhe=echarts.init(document.getElementById("line1-chart"));
+    var zhe2=echarts.init(document.getElementById("line2-chart"));
+    var zhu1=echarts.init(document.getElementById("bar1-chart"));
+    var zhu2=echarts.init(document.getElementById("bar2-chart"));
+    var zhu3=echarts.init(document.getElementById("bar"));
+    option = {
+        tooltip : {
+        trigger: 'axis',
+        axisPointer : {            // 坐标轴指示器，坐标轴触发有效
+            type : 'line',      // 默认为直线，可选为：'line' | 'shadow'
+        }
+    },
+        legend:{
+            show:true,
+            icon:'stack',
+            data:['Date Set One','Data set Two'],
+            textStyle:{                 //----图例内容样式
+                    // color:'#fff', 
+                    fontSize:12              //---所有图例的字体颜色
+                    //backgroundColor:'black',  //---所有图例的字体背景色
+            },
+            itemWidth:30,
+            itemHeight:10
+            
+        },
+    xAxis: {
+        type: 'category',
+        boundaryGap: false,
+        data: ["January", "February", "March", "April", "May", "June", "July"]
+    },
+    yAxis: {
+        type: 'value',
+        min:30
+    },
+    series: [{
+        name:"Date Set One",
+        data: [50, 40, 50, 40, 45, 40, 30],
+        type: 'line',
+        symbol: 'circle',
+        smooth: true,
+        areaStyle: {},
+        itemStyle: {  
+                normal: {   //颜色渐变函数 前四个参数分别表示四个位置依次为左、下、右、上
+                    color: new echarts.graphic.LinearGradient(0, 0, 0, 1,[{
+                            offset: 0, color: '#6fb5ba' // 0% 处的颜色
+                        }, {
+                            offset: 0.5, color: '#6fb5ba' // 100% 处的颜色
+                        }, {
+                            offset: 1, color: '#6fb5ba' // 100% 处的颜色
+                        }]
+                    ) //背景渐变色
+                }
+        }
+    },{
+        name:"Data set Two",
+        data: [30, 50, 40, 61, 42, 35, 40],
+        type: 'line',
+        symbol: 'circle',
+        smooth: true,
+        areaStyle: {},
+       
+        itemStyle: {  
+                normal: {   //颜色渐变函数 前四个参数分别表示四个位置依次为左、下、右、上
+                    color: new echarts.graphic.LinearGradient(0, 0, 0, 1,[{
+                            offset: 0, color: '#aaaad4' // 0% 处的颜色
+                        }, {
+                            offset: 0.5, color: '#d693a7' // 100% 处的颜色
+                        }, {
+                            offset: 1, color: '#ed7f85' // 100% 处的颜色
+                        }]
+                    ) //背景渐变色
+                }
+        }
+    }]
+};
+option2 = {
+    tooltip : {
+        trigger: 'axis',
+        axisPointer : {            // 坐标轴指示器，坐标轴触发有效
+            type : 'line', 
+            show:false
+            }     // 默认为直线，可选为：'line' | 'shadow'
+        },
+    color:["#59c2e6"],
+    legend: {
+            show:false,
+            data:['Page Visitors']
+            },
+    grid:{
+        left:'1%',
+        right:'1%',
+        top:'5%',
+        bottom:'20%'
+    },
+    xAxis: {
+        type: 'category',
+        data: ["A", "B", "C", "D", "E", "F", "G"],
+        axisTick:{
+			                show:false
+			            },
+        axisLine:{
+            lineStyle:{
+                color:'#f6f6f6'
+            }
+        },
+        axisLabel: {
+                    textStyle: {
+                        color: '#6e6e6e',//坐标值得具体的颜色
+ 
+                    }
+                }
+    },
+    yAxis: {
+        type: 'value',
+        show:false,
+        splitLine:{
+			        show:false
+			        }
+    },
+    series: [{
+        name:'Page Visitors',
+        data: [20, 28, 30, 22, 24, 10, 7],
+        type: 'line'
+    }]
+};
+option3 = {
+    tooltip : {
+        trigger: 'axis',
+        axisPointer : {            // 坐标轴指示器，坐标轴触发有效
+            type : 'line',
+            show:false      // 默认为直线，可选为：'line' | 'shadow'
+        }
+    },
+    color:["red"],
+    legend: {
+            show:false,
+            data:['Page Visitors']
+            },
+    grid:{
+        left:'1%',
+        right:'1%',
+        top:'5%',
+        bottom:'20%'
+    },
+    xAxis: {
+        type: 'category',
+        data: ["A", "B", "C", "D", "E", "F", "G"],
+        axisTick:{
+			                show:false
+			            },
+        axisLine:{
+            lineStyle:{
+                color:'#f6f6f6'
+            }
+        },
+        axisLabel: {
+                    textStyle: {
+                        color: '#6e6e6e',//坐标值得具体的颜色
+ 
+                    }
+                }
+    },
+    yAxis: {
+        type: 'value',
+        show:false,
+        splitLine:{
+			        show:false
+			        }
+    },
+    series: [{
+        name:'Page Visitors',
+        data: [20, 8, 30, 22, 24, 17, 20],
+        type: 'line'
+    }]
+};
+option4 = {
+    legend: {show:false},
+    grid:{
+        top:10,
+        bottom:10,
+        left:10,
+        right:10
+    },
+    tooltip: {},
+    xAxis: {type: 'category',show:false},
+    yAxis: {show:false},
+    // Declare several bar series, each will be mapped
+    // to a column of dataset.source by default.
+    series : [
+        {
+            name:'Data Set 1',
+            type:'bar',
+            // barWidth: '70%',
+            itemStyle:{
+                normal:{
+                    color:"#44b2d7"
+                }
+            },
+            data:[35, 55, 65, 85, 30, 22, 18, 35]
+        },
+        {
+            name:'Data Set 1',
+            type:'bar',
+            // barWidth: '70%',
+            itemStyle:{
+                normal:{
+                    color:"#59c2e6"
+                }
+            },
+            data:[49, 68, 85, 40, 27, 35, 20, 25]
+        }
+    ]
+};
+option5 = {
+    legend: {show:false,
+        data:["Data Set 1"]
+    },
+    grid:{
+        top:10,
+        bottom:10,
+        left:10,
+        right:10
+    },
+    tooltip: {},
+    xAxis: {type: 'category',
+            show:false,
+            axisTick: {
+                alignWithLabel: true
+            },
+            data:["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O"]
+    },
+    yAxis: {show:false},
+    // Declare several bar series, each will be mapped
+    // to a column of dataset.source by default.
+    series : [
+        {
+            name:'Data Set 1',
+            type:'bar',
+            // barWidth: '70%',
+            itemStyle:{
+                normal:{
+                    color:"#54e69d"
+                }
+            },
+            data:[40, 33, 22, 28, 40, 25, 30, 40, 28, 27, 22, 15, 20, 24, 30]
+        }
+    ]
+};
+option6 = {
+    legend: {},
+    tooltip: {},
+    dataset: {
+        source: [
+            ['product', '2015', '2016', '2017'],
+            ['Matcha Latte', 43.3, 85.8, 93.7],
+            ['Milk Tea', 83.1, 73.4, 55.1],
+            ['Cheese Cocoa', 86.4, 65.2, 82.5],
+            ['Walnut Brownie', 72.4, 53.9, 39.1]
+        ]
+    },
+    xAxis: {type: 'category'},
+    yAxis: {},
+    // Declare several bar series, each will be mapped
+    // to a column of dataset.source by default.
+    series: [
+        {type: 'bar'},
+        {type: 'bar'},
+        {type: 'bar'}
+    ]
+};
+zhu.setOption(option);
+zhe.setOption(option2);
+zhe2.setOption(option3);
+zhu1.setOption(option4);
+zhu2.setOption(option5);
+zhu3.setOption(option6);
+$(window).resize(function(){
+        zhu.resize();
+        zhe.resize();
+        // circle1.resize();
+        zhe2.resize();
+        zhu1.resize();
+        zhu2.resize();
+        zhu3.resize();
+    });
+</script>

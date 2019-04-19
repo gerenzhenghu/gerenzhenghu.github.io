@@ -1,0 +1,409 @@
+@charset "utf-8";
+/* CSS Document */
+body,h1,h2,h3,h4,h5,h6,ol,ul,dl,dd,p,input,select,textarea,td{
+	margin:0;
+	padding:0;
+}
+html,body{
+	height: 100%;
+}
+html{
+	font-size: 26.67vw;
+}
+body{
+    font-family:"微软雅黑";
+    overflow: hidden;
+	/* display: -webkit-flex; */
+	/* -webkit-flex-direction:column; */
+}
+a{
+	text-decoration:none;
+}
+ul,ol{
+	list-style:none;
+}
+img{
+	border:0;
+	display: block;
+}
+.bg{
+    background: url(../img/bg1.jpg) no-repeat;
+    background-size: cover;
+    height: 100%;
+    position: relative;
+    /* display: none; */
+    overflow: hidden;
+}
+/* .dong{
+    width: 100%;
+} */
+.music{
+    width: .24rem;
+    height: .24rem;
+    background: url(../img/musicIcon2.png) no-repeat;
+    background-size: cover;
+    position: fixed;
+    left: 20px;
+    top:20px;  
+    border-radius: 50%;
+    animation: rotat 1s infinite linear;
+}
+@keyframes rotat{
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+.pos{
+    position: absolute;
+    z-index: 10000;
+  
+    
+}
+.swiper-container{
+    height: 100%;
+}
+.ter{
+    width: 2.8rem;
+    height: 2rem;
+    background: url(../img/img1.png) no-repeat;
+    background-size: 100%;
+    top:.6rem;
+    right: 10px;
+    /* display: none; */
+}
+.shine{
+    width: 80%;
+    height: .8rem;
+    bottom:1.4rem;
+    left: 0;
+}
+.shine img{
+    width: 100%;
+    height: 100%;
+   
+}
+.start{
+    width: 35%;
+    height: .8rem;
+    background: url(../img/img3.png) no-repeat;
+    background-size: 100% 100%;
+    bottom:1rem;
+    right: 0;
+    /* display: none; */
+}
+.hen{
+    width: .8rem;
+    height: .4rem;
+    background: url(../img/img4.png)no-repeat;
+    background-size: 100% 100%;
+    bottom:.2rem;
+    left: 1.6rem;
+}
+/* 页面二 */
+.bg1{
+    background: url(../img/bg2.jpg) no-repeat;
+    background-size: cover;
+    height: 100%;
+    /* display: none; */
+    position: relative;
+}
+.title{
+    width: 60%;
+    height: .6rem;
+    background: url(../img/img5.png) no-repeat;
+    background-size: 100% 100%;
+    top: 1.2rem;
+    left: 20%;
+    /* display: none; */
+}
+.sunblock{
+    width: .5rem;
+    height: .8rem;
+    background: url(../img/img6.png) no-repeat;
+    background-size: 100% 100%;
+    top: 2rem;
+    right: 8px;
+    /* display: none; */
+}
+.cap{
+    width: 1.7rem;
+    height: 2rem;
+    background: url(../img/img7.png) no-repeat;
+    background-size: 100% 100%;
+    top: 2.7rem;
+    right: .2rem;
+    /* display: none; */
+}
+
+.glasses{
+    width: 1rem;
+    height: 3rem;
+    background: url(../img/img8.png) no-repeat;
+    background-size: 100% 100%;
+    top: 2.9rem;
+    right: .3rem;
+    /* display: none; */
+}
+
+.bao{
+    width: 2.4rem;
+    height: 3rem;
+    background: url(../img/img9.png) no-repeat;
+    background-size: 100% 100%;
+    bottom: 0;
+    right: 0;
+}
+.aihao{
+    width: 80%;
+    height: 1.6rem;
+    background: url(../img/img10.png) no-repeat;
+    background-size: 100% 100%;
+    top:1.3rem;
+    left: 10%;
+    z-index:8;
+}
+.s1{
+    width: .15rem;
+    height:.15rem;
+    top:1.27rem;
+    left: 1.05rem;
+    z-index: 9;
+}
+.s2{
+    width: .15rem;
+    height:.15rem;
+    top:1.27rem;
+    left: 1.75rem;
+    z-index: 9;
+}
+.s3{
+    width: .15rem;
+    height:.15rem;
+    top:1.27rem;
+    left: 2.62rem;
+    z-index: 9;
+}
+.s4{
+    width: .15rem;
+    height:.15rem;
+    top:1.56rem;
+    left: .38rem;
+    z-index: 9;
+}
+.s5{
+    width: .15rem;
+    height:.15rem;
+    top:1.56rem;
+    left: 1.05rem;
+    z-index: 9;
+}
+.s6{
+    width: .15rem;
+    height:.15rem;
+    top:1.56rem;
+    left: 2.15rem;
+    z-index: 9;
+}
+.nextTopic{
+    width: 35%;
+    height: .8rem;
+    bottom:.6rem;
+    right: 0;
+}
+.ready{
+    width: 80%;
+    height: 1.8rem;
+    top:1.2rem;
+    left:20%;
+}
+.fb{
+    width: 60%;
+    height: .8rem;
+    bottom:.6rem;
+    right: 0;
+}
+.bg2{
+    background: url(../img/bg3.jpg) no-repeat;
+    background-size: 100% 100%;
+    height: 100%;
+    /* display: none; */
+    position: relative;
+}
+.peri{
+    width: 80%;
+    height: .6rem;
+    top:.9rem;
+    left: 10%;
+}
+.img17{
+    width:95%;
+    height: 4.5rem;
+    bottom:.6rem;
+    right: 0;
+}
+.img18{
+    width: 2.5rem;
+    height: 1.3rem;
+    top: 1.8rem;
+    left: 0.2rem;
+}
+.img19{
+    width: 2rem;
+    height: .3rem;
+    top: 3.2rem;
+    right: 1.3rem;
+}
+.img20{
+    width: 1.6rem;
+    height: 1rem;
+    top: 3.8rem;
+    right: .4rem;
+}
+.img21{
+    width: 1.6rem;
+    height: 0.4rem;
+    top: 4.8rem;
+    left: .2rem;
+}
+.img22{
+    width: 1.8rem;
+    bottom: .6rem;
+    left: .4rem;
+}
+.img23{
+    width: 1rem;
+    height: .6rem;
+    bottom: 1.3rem;
+    right: .4rem;
+}
+.img24{
+    width: 80%;
+    height: 1.4rem;
+    top: 1.2rem;
+    left: .4rem;
+}
+.img25{
+    width: 80%;
+    height: .3rem;
+    top: 3.2rem;
+    left: .4rem;
+}
+.img26{
+    width: 60%;
+    height: .8rem;
+    top: 3.8rem;
+    left: .8rem;
+}
+.img27{
+    width: 45%;
+    height: 1rem;
+    bottom: .8rem;
+    left: .9rem;
+}
+.img28{
+    width: 90%;
+    height: 1.8rem;
+    top: 1.2rem;
+    left: .2rem;
+}
+.img30{
+    width: 90%;
+    height: 1.8rem;
+    top:3.2rem;
+    left:.2rem;
+}
+.img31{
+    width: 45%;
+    height: .8rem;
+    bottom:.6rem;
+    right: 0;
+}
+.img32{
+    width: 80%;
+    height: 1.3rem;
+    top: 1.2rem;
+    left: .4rem;
+}
+.img33{
+    width: 65%;
+    height: 2.8rem;
+    top: 2.8rem;
+    left: .4rem;
+}
+.img34{
+    width:65%;
+    height: 2.8rem;
+    top:3.4rem;
+    left:.6rem;
+}
+.img35{
+    width: 65%;
+    height: 2.8rem;
+    top: 3rem;
+    left: 1.2rem;
+}
+.img36{
+    width: 48%;
+    height: .8rem;
+    top: 4.2rem;
+    left: .8rem;
+}
+.bg3{
+    background: url(../img/bg4.jpg) no-repeat;
+    background-size: 100% 100%;
+    height: 100%;
+    /* display: none; */
+    position: relative;
+}
+.img37{
+    width: 85%;
+    top:1rem;
+    left:.3rem;
+}
+.img38{
+    width: 100%;
+    top:2.4rem;
+    left:0;
+}
+.img39{
+    width: 90%;
+    bottom:.4rem;
+    right: 0;
+}
+.img40{
+    width: 1.6rem;
+    top: 1rem;
+    left: 0.4rem;
+}
+.img41{
+    width: 1.8rem;
+    top: 2.1rem;
+    left: 1.6rem;
+
+}
+.img42{
+    width: 1.9rem;
+    top: 3rem;
+    left: 0.2rem;
+}
+.bg4{
+    background: url(../img/bg5.jpg) no-repeat;
+    background-size: 100% 100%;
+    height: 100%;
+    /* display: none; */
+    position: relative;
+}
+.img44{
+    width: 100%;
+    left: 0;
+    bottom: .3rem;
+}
+.img45{
+    widows: .8rem;
+    height: .4rem;
+    right: .2rem;
+    bottom:.2rem;
+}

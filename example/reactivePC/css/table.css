@@ -1,0 +1,73 @@
+.link{
+    background: #fff;
+    padding: 0 30px;
+    margin-top: 2px;
+}
+.link ul{
+    padding: 15px 0;
+    display: flex;
+}
+.link ul li{
+    color: #aaa;
+    font-weight: 300;
+}
+.link ul li a{
+    color: #796AEE;
+}
+.link ul li:nth-child(2)::before{
+    content: "/";
+    display: inline-block;
+    padding-right: 9px;
+    color: #6c757d;
+}
+.basic{
+    display: flex;
+    padding: 0 30px;
+}
+.basic-left{
+    background: #fff;
+    width: 50%;
+    margin: 0 15px;
+}
+.basic-right{
+    background: #fff;
+    width: 50%;
+    margin: 0 15px;
+}
+.card-body{
+    padding: 20px 20px;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+}
+.table td,table th{
+    padding: 12px;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+.table .tv th{
+    border-bottom: 2px solid #dee2e6;
+    vertical-align: bottom;
+}
+.striped table tr:nth-child(2n){
+    background: rgba(0,0,0,.05);
+}
+.effect{
+    padding: 50px 30px;;
+}
+.compact table td,.compact table th{
+    padding: 4.8px 4.8px;
+}
+@media screen and (max-width:990px){
+    .basic{
+        flex-direction: column;
+    }
+    .basic-left,.basic-right{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}

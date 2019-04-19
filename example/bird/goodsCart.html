@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/goodsCart.css">
+</head>
+<body>
+	<div class="header"></div>
+    <!-- 购物车 -->
+    <div class="goodcart">
+        <table cellspacing="0">
+            <tr class="lists" height="40px">
+                <td>
+                    <input id="tid" type="checkbox"  />全选
+                    <!-- <input id="checkedAllId" type="checkbox" checked="checked">全选 -->
+                    <input id="btnUnCheckId" type="button" value="反选" />
+                </td>
+                <td>商品名称</td>
+                <td>单价</td>
+                <td>数量</td>
+                <td>小计</td>
+                <td>操作</td>
+            </tr>
+        </table>
+        
+    </div>
+    <div class="zanwu" style="width:1180px; text-align:center; margin: 0 auto;">暂无商品</div>
+    <div class="moneys">
+        <div class="money-left">
+            <a href="">继续购物</a>
+            <p>共<span class="goodscounts">3</span>件商品,已选<span class="buy-counts" ;>3</span>件商品</p>
+        </div>
+        <div class="momey-right">
+            <p class="activity-money">合计<span>0</span></p>
+            <a class="btn">去结算</a>
+        </div>
+    </div>
+<div class="foot">
+		
+	</div>
+</body>
+</html>
+<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+<script type="text/javascript" src="js/goodsCart.js"></script>
+<script type="text/javascript">
+    function getCookie(key){
+	var str = unescape(document.cookie);//username=jzm; userpass=1236667
+	//1、分割成数组（; ）
+	var  arr = str.split('; ');//['username=jzm','userpass=1236667']
+
+	//2、从数组查找key=;
+	for(var i in arr){
+		if(arr[i].indexOf(key+'=')==0){
+			return arr[i].split('=')[1];
+		}
+	}
+	return null;
+}
+
+
+$(function () {
+	$(".header").load("top.html");
+	$(".phone").mouseover(function(){
+		$(this).addClass("on");
+	})
+	$(".phone").mouseout(function(){
+		$(this).removeClass("on");
+	})
+
+	$(".foot").load("footer.html");
+	
+});
+
+
+        
+
+
+</script>

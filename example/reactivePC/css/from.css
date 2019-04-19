@@ -1,0 +1,271 @@
+.from{
+    display: flex;
+    padding: 0 30px;
+}
+.from p{
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 16px;
+}
+.form-group{
+    margin-bottom: 16px;
+}
+label{
+    display: inline-block;
+    margin-bottom: 8px;
+}
+.group-label{
+    font-size:14px;
+    color: #777;
+    
+}
+.group-input{
+    height: 38px;;
+    padding: 6px 12px;
+    border:1px solid #dee2e6;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    color: #495057;
+}
+.btn{
+    width:18%;
+    height: 38px;
+    background: #796AEE;
+    border-radius: 4px;
+    padding: 6px 12px;
+    cursor: pointer;
+    color: #fff;
+    border-color: #796AEE;
+    box-sizing: border-box;
+}
+.form-right{
+    /* width: 50%; */
+    background: #fff;
+}
+.form-left{
+    width: 50%;
+    padding: 0 15px;
+}
+.basics{
+    background: #fff;
+}
+.form-bas{
+    width: 50%;
+    padding: 0 15px;
+}
+.rows{
+    display: flex;
+}
+.rows label{
+    width: 20%;
+    padding: 0 15px;
+}
+.rows .addr{
+    padding: 0 15px;
+    width: 80%;
+}
+.rows .addr .form-text{
+    font-size: 13px;
+    margin-top: 5px;
+    margin-bottom: 0;
+    color: #999;
+}
+.rows .btn{
+    margin-left: 123px;
+}
+.inline{
+    display: flex;
+    padding: 50px 30px;
+}
+.inline-left{
+    padding: 0 15px;
+    width: 65%;
+}
+.lefts{
+    background:#fff;
+}
+.inline-bottom{
+    padding: 20px 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.group-input1{
+    height: 38px;;
+    padding: 6px 12px;
+    border:1px solid #dee2e6;
+    box-sizing: border-box;
+    width: 100%;
+}
+.inline-bottom form{
+    display: flex;
+    width: 100%;
+
+}
+.inline-bottom .btn{
+    width: 100%;
+    box-sizing: border-box;
+}
+.inline-bottom .form-group{
+    margin-right: 16px;
+    /* width: 33.3333%; */
+}
+.inline-right{
+    width: 35%;
+    padding: 0 15px;
+}
+.card-body .btn{
+    width: auto;
+}
+.text-center{
+    text-align: center;
+}
+.element{
+    padding: 0 30px 50px;
+}
+.background{
+    background: #fff;
+}
+.element-section{
+    /* background: #fff; */
+    padding: 0 15px;
+}
+.line{
+    height: 0;
+    border-top:1px dashed #eee;
+    margin: 30px 0;
+}
+.bg{
+    background: #e9ecef;
+}
+.text-primary{
+    color: #796AEE;
+    font-size: 12px;
+}
+.lab label{
+    width: auto;
+    padding: 0;
+    /* vertical-align: middle; */
+}
+.dis{
+    padding: 0;
+    margin-bottom: 10px;
+}
+.dis label{
+    margin-bottom: 0;
+    
+}
+.dis input[type="radio"]:checked::before{
+	display: block;
+	width: 18px;
+    height: 18px;
+    border-radius: 50%;
+	content: "●";
+	background-color: #3b25e6;
+	color:#fff;
+	font-weight: 900;
+    text-align: center;
+    line-height: 18px;
+}
+.group-input option{
+    min-height: 18px;
+}
+select.groups[multiple] {
+    height: auto;
+    margin-top: 20px;
+}
+.line-file{
+    display: block;
+    width: 100%;
+    outline: none;
+}
+.is-valid{
+    border-color:#28a745;
+    outline-color: #28a745;
+}
+.is-invalid{
+    border-color:#dc3545;
+    outline-color: #dc3545;
+    outline-width: 5px;
+    /* outline-offset: 5px; */
+}
+.error{
+    width: 100%;
+    margin-top: 4px;
+    font-size: 80%;
+    color: #dc3545;
+}
+.input-lg{
+    height: 48px;
+}
+.input-sm{
+    height: 21px;
+}
+.mar{
+    margin-bottom: 10px;
+}
+.com-d-3{
+    padding: 0 20px;
+    width: 25%;
+}
+.com-d-4{
+    padding: 0 20px;
+    width: 35%;
+}
+.com-d-5{
+    padding: 0 20px;
+    width: 40%;
+}
+.mater{
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.mater-label{
+    position: absolute;
+    top:6px;
+    color: #999;
+    transition: all 0.2s;
+}
+.label-active{
+    top:-18px;
+    color: #796AEE;
+    font-size: 10px;
+}
+.outline-input{
+    transition: all 0.2s;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #dee2e6;
+}
+.input-active{
+    border-bottom: 1px solid #796AEE;
+}
+.btn-sub{
+    height: 38px;
+    background: #868e96;
+    color: #fff;
+    border-color: #868e96;
+    border-radius: 4px;
+}
+.rows .btn-sub+button{
+    margin-left: 3px;
+}
+@media screen and (max-width:990px){
+    .from,.inline{
+        flex-direction: column;
+    }
+    .form-left,.form-bas,.inline-left,.inline-right{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+@media screen and (max-width:570px){
+    .rows{
+        flex-direction: column;
+    }
+    .group-label,.rows .addr,.rows label {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,21 @@
+$(".group1").click(function(){
+    $(".step1").css("display","block");
+    $(".step2").css("display","none");
+    $(".step3").css("display","none");
+    $(this).addClass("group0");
+    $(this).siblings().removeClass("group0");
+})
+$(".group2").click(function(){
+    $(".step1").css("display","none");
+    $(".step2").css("display","block");
+    $(".step3").css("display","none");
+    $(this).addClass("group0");
+    $(this).siblings().removeClass("group0");
+})
+$(".group3").click(function(){
+    $(".step1").css("display","none");
+    $(".step2").css("display","none");
+    $(".step3").css("display","block");
+    $(this).addClass("group0");
+    $(this).siblings().removeClass("group0");
+})

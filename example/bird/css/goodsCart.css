@@ -1,0 +1,140 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    background: #f5f5f5;
+}
+.ts{
+    font-size: 26px;
+    color: white;
+    float: left;
+    margin-left: 20px;
+    margin-top: 45px;
+}
+.ts span{
+    font-size: 14px;
+    color: #999;
+    margin-left: 10px;
+}
+.goodcart{
+    width: 100%;
+    background: #f5f5f5;
+}
+table{
+    width: 1180px;
+    margin: 0 auto;
+    background: white;
+}
+table td{
+    border-bottom: 2px solid #f5f5f5;
+    height: 100px;
+    text-align: center;
+}
+/*table td:nth-child(6n){
+    border--bottom: 1px solid black;
+}*/
+.xuan{
+    width: 110px;
+}
+.goodsname{
+    width: 400px;
+    line-height: 60px;
+}
+.goodsname img{
+    float: left;
+    width: 60px;
+    height: 60px;
+    margin-left: 15px;
+    /*vertical-align: middle;*/
+    float: left;
+
+}
+.price1{
+    width:110px;
+}
+.counts{
+    width: 150px;
+    /*text-align: center;*/
+}
+.counts p{
+    width: 100px;
+    border: 1px solid #999;
+    margin: 0 auto;
+    height: 20px;
+    line-height: 20px;
+}
+.counts p span:nth-child(1){
+    display: inline-block;
+    width: 25px;
+    cursor: pointer;
+}
+.counts p span:nth-child(1):hover{
+    background: #666;
+}
+.counts p span:nth-child(2){
+    width: 43px;
+    display: inline-block;
+}
+.counts p span:nth-child(3){
+    width: 25px;
+    display: inline-block;
+    cursor: pointer;
+}
+.counts p span:nth-child(3):hover{
+    background: #666;
+}
+.xj{
+    width: 210px;
+}
+.moneys{
+    width: 1180px;
+    height: 48px;
+    line-height: 48px;
+    font-size: 14px;
+    margin: 0 auto;
+    background: white;
+    margin-bottom: 10px;
+}
+.moneys p{
+    display: inline-block;
+}
+.money-left{
+    float: left;
+}
+.money-left a{
+    line-height: 50px;
+    margin-left: 32px;
+}
+.money-left p{
+    margin-left: 16px;
+    padding-left: 16px;
+    border-left: 1px solid #eee;
+    color: #757575;
+}
+.money-left p span{
+    color: #ff6700;
+}
+.momey-right{
+    float: right;
+}
+.activity-money{
+    padding-left: 13px;
+    color: #ff6700;
+}
+.activity-money span{
+    font-size: 30px;
+}
+.btn{
+    float: right;
+    width: 200px;
+    height: 48px;
+    line-height: 48px;
+    font-size: 18px;
+    margin-left: 50px;
+    vertical-align: top;
+    background: #ff6700;
+    border-color: #ff6700;
+    color: #fff;
+    text-align: center;
+}

@@ -1,0 +1,49 @@
+.panel-body{
+    padding: 50px 30px;
+    margin-top: 2px;
+}
+.sec{
+    padding: 15px;
+    background: #fff;
+}
+.panel-group{
+    display:flex;
+    justify-content:center;
+}
+.panel-group div{
+    text-align: center;
+    line-height: 100px;
+    width: 100px;
+    height: 100px;
+    font-size: 14px;
+    border-radius: 50%;
+    background: #eee;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.panel-group .group0{
+    color: #fff;
+    background: #A9D86E;
+}
+.form-groups{
+    padding: 20px 0;
+    /* position: relative; */
+}
+
+.step2,.step3{
+    display: none;
+}
+.pre-next{
+    display: flex;
+    justify-content: space-between;
+}
+.pre-next a{
+    width: 60px;
+}
+.addrtextarea{
+    height: auto;
+}
+.addr p{
+    font-size: 14px;
+    color: #797979;
+}

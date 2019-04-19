@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/reg.css">
+</head>
+<body>
+	<div class="header"></div>
+	<div class="set">
+		<div class="set-center">
+			<div class="set-right">
+				<div class="set-reg">
+					<p>欢迎注册</p>
+					<a href="login.html">已有账号<span>立即登录</span></a>
+				</div>
+				<div class="from-reg">
+					<div class="phone1">
+						<input class="reg-phone" type="text" placeholder="请输入手机号">
+						<span></span>
+					</div>
+					<div class="phone2">
+						<input class="yzm" type="text" placeholder="六位验证码">
+						<p>免费获取手机验证码</p>
+						<span></span>
+					</div>
+					<div class="phone3">
+						<input class="reg-phone" type="password" placeholder="6-20位大小写字母，数字">
+						<span></span>
+					</div>
+					<div class="phone4">
+						<input class="reg-phone" type="password" placeholder="请再次输入密码">
+						<span></span>
+					</div>
+					<div class="phone5">
+						<input type="checkbox" checked/>
+						<p>已阅读并同意<a href="##">《钻石小鸟用户服务协议》</a></p>
+					</div>
+					<span></span>
+					<div class="phone6">
+						<div class="reg-phon">注册</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="foot">
+		
+	</div>
+</body>
+</html>
+<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+<script type="text/javascript" src="js/reg.js?l=5"></script>
+<script type="text/javascript" src="js/reg1.js?l=5"></script>
+<script type="text/javascript">
+
+
+$(function () {
+	$(".header").load("top.html");
+	$(".phone").mouseover(function(){
+		$(this).addClass("on");
+	})
+	$(".phone").mouseout(function(){
+		$(this).removeClass("on");
+	})
+
+	$(".foot").load("footer.html");
+	
+});
+</script>

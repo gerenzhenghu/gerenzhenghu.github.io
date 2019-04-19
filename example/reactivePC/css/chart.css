@@ -1,0 +1,40 @@
+.basic-left{
+    width:65%;
+}
+.basic-right{
+    width:35%;
+}
+#line-chart{
+    height: 321px;
+    width: 100%;
+}
+#line1-chart,#line2-chart{
+    height: 160px;
+    width: 100%;
+}
+.effect .bar-left{
+    width: 35%;
+}
+.effect .bar-right{
+    width: 65%;
+}
+#bar1-chart{
+    height:143px;
+    width: 100%;
+    border-bottom: 1px soild #999;
+}
+#bar2-chart{
+    height:143px;
+    width: 100%;
+}
+#bar{
+    width: 100%;
+    height: 321px;
+}
+@media screen and (max-width:990px){
+    
+    .basic-left,.basic-right,.effect .bar-left,.effect .bar-right{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}

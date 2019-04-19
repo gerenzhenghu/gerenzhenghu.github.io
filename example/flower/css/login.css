@@ -1,0 +1,117 @@
+@charset "UTF-8";
+body, h1, h2, h3, h4, h5, h6, ol, ul, dl, dd, p, input, select, textarea, td {
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 26.67vw; }
+
+body {
+  font-family: "微软雅黑";
+  /*position: relative;*/ }
+
+a {
+  text-decoration: none; }
+
+ul,
+ol {
+  list-style: none; }
+
+img {
+  border: 0;
+  display: block; }
+
+html,
+body {
+  height: 100%; }
+
+i {
+  font-style: normal; }
+
+header {
+  width: 100%;
+  height: .44rem; }
+  header img {
+    width: .44rem;
+    height: .44rem; }
+
+.nav {
+  padding: 0 .16rem; }
+  .nav img {
+    width: 1.94rem;
+    height: .24rem;
+    margin: 0 auto;
+    margin-top: .12rem;
+    margin-bottom: .44rem; }
+
+.phone {
+  font-size: 14px;
+  border-bottom: 1px solid #e9ecf0; }
+  .phone input {
+    width: 2.95rem;
+    height: .44rem;
+    padding: 0 .46rem 0 .02rem;
+    outline: none;
+    color: #232628;
+    font-size: 14px;
+    border: 0; }
+  .phone input::-webkit-input-placeholder {
+    color: #d7dadd;
+    font-size: 14px; }
+
+.pass {
+  font-size: 14px;
+  margin-top: .08rem;
+  border-bottom: 1px solid #e9ecf0; }
+  .pass input {
+    width: 2.23rem;
+    height: .44rem;
+    padding: 0 .46rem 0 .02rem;
+    outline: none;
+    color: #232628;
+    font-size: 14px;
+    border: 0; }
+  .pass input::-webkit-input-placeholder {
+    color: #d7dadd;
+    font-size: 14px; }
+  .pass span {
+    color: #71797f;
+    font-size: .13rem; }
+
+.login {
+  height: .46rem;
+  text-align: center;
+  line-height: .46rem;
+  font-size: .15rem;
+  color: #fff;
+  background: #ff734c;
+  border-radius: .23rem;
+  margin-top: .45rem;
+  box-shadow: 0 .03rem .06rem 0 #ff734c; }
+
+.flex-item {
+  display: flex;
+  justify-content: space-between;
+  margin-top: .18rem; }
+  .flex-item a {
+    font-size: .14rem;
+    color: #71797f; }
+
+.footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.04rem; }
+  .footer div {
+    display: flex;
+    font-size: .13rem;
+    color: #71797f; }
+    .footer div img {
+      width: .26rem;
+      height: .21re; }
+
+.bor {
+  width: 1px;
+  height: .16rem;
+  margin-left: .70rem;
+  margin-right: .60rem;
+  background: #71797f; }

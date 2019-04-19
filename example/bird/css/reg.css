@@ -1,0 +1,119 @@
+body{
+	text-align:center;
+}
+.set{
+	width: 100%;
+	height: 601px;
+	background: url(../img/zhucebg.jpg) no-repeat center top;
+}
+.set-center{
+	width: 1180px;
+	overflow:hidden;
+	height: 601px;
+	margin: 0 auto;
+}
+.set-right{
+	width: 366px;
+	height:600px;
+	float: right;
+    /*position: relative;*/
+    padding-right: 50px;
+    padding-top: 60px;
+}
+.set-reg{
+	width: 366px;
+	line-height: 45px;
+	overflow:hidden;
+	margin-top: 22px;
+}
+.set-reg p{
+	font-size: 20px;
+	color: #000;
+	float: left;
+}
+.set-reg a{
+	font-size: 12px;
+	color: #666;
+	float: right;
+}
+.set-reg a span{
+	color: #ff8a81;
+    padding-left: 10px;
+}
+.from-reg{
+	width: 366px;
+	overflow:hidden;
+	height: 377px;
+	background: #fcede9;
+	padding-top: 44px;
+}
+.reg-phone{
+	width: 271px;
+	height:22px;
+	padding: 6px 0 6px 10px;
+	font-size: 12px;
+	color: #000;
+	border: 0;
+}
+.phone6 .reg-phon{
+	background: #ff8a81;
+    color: #fff;
+    width: 281px;
+    height: 32px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    line-height: 32px;
+    display: block;
+    margin: 0 auto;
+}
+.from-reg span{
+	width: 260px;
+	height: 22px;
+	display: block;
+	/*background: red;*/
+	margin-left: 23px;
+	color: red;
+	text-align: left;
+	margin: 0 auto;
+}
+.yzm{
+	width: 126px;
+	height:24px;
+	padding: 6px 0 6px 10px;
+	font-size: 12px;
+	color: #000;
+	border: 0;
+}
+.phone2 p{
+	width: 133px;
+	height:36px;
+	/*padding: 6px 0 6px 10px;*/
+	font-size: 12px;
+	color: #fff;
+	background: #feaca0;
+	margin-left: 12px;
+	line-height: 36px;
+	display: inline-block;
+
+}
+.from-reg div{
+	overflow:hidden;
+}
+.phone5 input{
+	float: left;
+	margin-left: 42px;
+}
+.phone5 p{
+	font-size: 12px;
+	color: #000;
+	display: inline-block;
+	float: left;
+	margin-left: 8px;
+	/*margin: 0 auto;*/
+}
+.phone5 p a{
+	font-size: 12px;
+	color: #000;
+	text-decoration: underline;
+}

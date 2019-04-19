@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/example.css">
+    <link rel="stylesheet" href="css/magic.min.css">
+</head>
+<body>
+<div class="header">
+    <div class="logo">MinUI</div>
+    <div class="header-right">
+        <a href="index.html">首页</a>
+        <a href="##">GitHub</a>
+        <a href="##">团队</a>
+        <a href="example.html">实例</a>
+        <a href="##">组件库</a>
+    </div>
+</div>
+        <div class="container">
+		
+                <div class="box">
+                    <div class="box-content">
+                        <div class="box-wrapper">
+                           pc端 电商<span class="name">Personal Computer</span>
+                            <div class="row">92 likes - 1,410 views</div>					
+                        </div>
+                    </div>
+                    <div class="box-overlay magictime" data-hover="puffOut" data-return="puffIn">
+                        <img src="img/1.jpg" alt="" />
+                    </div>
+                    <a class="link" href="example/bird/index.html" target="_blank"></a>						
+                </div>
+                
+                <div class="box">
+                    <div class="box-content">
+                        <div class="box-wrapper">
+                                pc端 后台管理系统<span class="name">Personal Computer</span>
+                            <div class="row">119 likes - 1,826 views</div>					
+                        </div>			
+                    </div>
+                    <div class="box-overlay magictime" data-hover="puffOut" data-return="puffIn">
+                        <img src="img/2.jpg" alt="" />
+                    </div>
+                    <a class="link" href="example/reactivePC/index.html" target="_blank"></a>	
+                </div>
+                
+                <div class="box">
+                    <div class="box-content">
+                        <div class="box-wrapper">
+                            移动端 电商<span class="name">The mobile terminal</span>
+                            <div class="row">135 likes - 1,296 views</div>					
+                        </div>				
+                    </div>
+                    <div class="box-overlay magictime" data-hover="puffOut" data-return="puffIn">
+                        <img src="img/3.jpg" alt="" />
+                    </div>
+                    <a class="link" href="example/flower/index.html" target="_blank"></a>	
+                </div>	
+                
+                
+                <div class="box">
+                    <div class="box-content">
+                        <div class="box-wrapper">
+                                移动端 vue框架<span class="name">The mobile terminal</span>
+                            <div class="row">123 likes - 1,492 views</div>					
+                        </div>				
+                    </div>
+                    <div class="box-overlay magictime" data-hover="puffOut" data-return="puffIn">
+                        <img src="img/4.jpg" alt="" />
+                    </div>
+                    <a class="link" href="#" target="_blank"></a>				
+                </div>	
+                
+                <div class="box">
+                    <div class="box-content">
+                        <div class="box-wrapper">
+                           微信场景<span class="name">WeChat small scene</span>
+                            <div class="row">84 likes - 1,157 views</div>					
+                        </div>				
+                    </div>
+                    <div class="box-overlay magictime" data-hover="puffOut" data-return="puffIn">
+                        <img src="img/5.jpg" alt="" />
+                    </div>
+                    <a class="link" href="example/changjing/1.html" target="_blank"></a>							
+                </div>	
+                
+                <div class="box">
+                    <div class="box-content">
+                        <div class="box-wrapper">
+                           微信小程序<span class="name">WeChat applet</span>
+                            <div class="row">77 likes - 1,017 views</div>					
+                        </div>				
+                    </div>
+                    <div class="box-overlay magictime" data-hover="puffOut" data-return="puffIn">
+                        <img src="img/6.jpg" alt="" />
+                    </div>
+                    <a class="link" href="#" target="_blank"></a>										
+                </div>								
+                                            
+                
+            </div>
+        
+        
+        
+</body>
+</html>
+<script src="js/jquery-1.11.3.js"></script>
+<script>
+    $(function () {
+	$('.box').hover(
+		function () {
+			var overlay = $(this).find('.box-overlay');
+			overlay.removeClass(overlay.data('return')).addClass(overlay.data('hover'));
+		},
+		function () {
+			var overlay = $(this).find('.box-overlay');		
+			overlay.removeClass(overlay.data('hover')).addClass(overlay.data('return'));
+
+		}
+	);
+});
+</script>

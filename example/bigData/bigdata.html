@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/bigdata.css"/>
+</head>
+<body>
+    <!-- header -->
+    <div class="header">南京市卫计综合管理平台</div>
+    <div class="section">
+        <div class="yuyue">
+            <div class="yuyue-left">
+                <img src="img/img1.png" alt="">
+                <div class="registration">
+                    <p>预约挂号总数</p>
+                    <p>同比增长<span>36%<br/>657,678</span>人</p>
+                </div>            
+            </div>
+            <div class="yuyue-left">
+                    <img src="img/img2.png" alt="">
+                    <div class="registration">
+                        <p>预约挂号统计</p>
+                        <p>同比减少<span>3.2</span>分钟<br/><span></span>分钟</p>
+                    </div>            
+                </div>
+        </div>
+        <div id="yuyue-center"></div>
+        <div class="ranking">
+            <div id="ranking-top"></div>
+            <div id="ranking-bottom"></div>
+        </div>
+        <div id="pass">
+            <h4>一账通</h4>
+            <div class="imgl">
+                <img src="img/img3.png" alt="">
+                <p>金额池<span>5，858</span>万元</p>
+            </div> 
+            <div id="pass-bottom"></div>
+        </div>
+    </div>
+    <div class="section1">
+        <div class="medical">
+            <div class="medical-left">
+                <h4>远程医疗</h4>
+                <p>门诊<span>5,858</span>急诊人数</p>
+                <p class="zhuz"></p>
+                <p>门诊<span>5,858</span>急诊人数</p>
+                <p class="zhuz"></p>
+                <p>门诊<span>5,858</span>急诊人数</p>
+                <p class="zhuz"></p>
+            </div>
+            <div id="medical-bottom">
+
+            </div>
+        </div>
+        <div class="medical-right">
+            <h4>自助医疗</h4>
+            <div class="right-app-ilst">
+                <div class="app-item">
+                    <img src="img/img4.png" alt="">
+                    <div class="app-title">
+                    <p>12423人</p>
+                    <span>APP下载</span>
+                    <p>12423人</p>
+                    
+                    <span>微信关注</span>
+                    </div>
+
+                </div>
+                <div class="app-item">
+                    <img src="img/img5.png" alt="">
+                    <div class="app-title">
+                    <p>12423人</p>
+                    <span>APP下载</span>
+                    <p>12423人</p>
+                    
+                    <span>微信关注</span>
+                    </div>
+
+                </div>
+                <div class="app-item">
+                    <img src="img/img6.png" alt="">
+                    <div class="app-title">
+                    <p>12423人</p>
+                    <span>APP下载</span>
+                    <p>12423人</p>
+                    
+                    <span>微信关注</span>
+                    </div>
+
+                </div>
+                <div class="app-item">
+                    <img src="img/img7.png" alt="">
+                    <div class="app-title">
+                    <p>12423人</p>
+                    <span>APP下载</span>
+                    <p>12423人</p>
+                    
+                    <span>微信关注</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="jquery-1.8.3.js"></script>
+    <script src="echarts.js"></script>
+    <script>
+        var circle=echarts.init(document.getElementById("yuyue-center"));
+        var zhu=echarts.init(document.getElementById("ranking-top"));
+        var zhu1=echarts.init(document.getElementById("pass-bottom"));
+        var circle1=echarts.init(document.getElementById("ranking-bottom"));
+        var zhe=echarts.init(document.getElementById("medical-bottom"));
+        // app.title = '预约方式';
+        // let resizeWorldMapContainer = function () {
+        //     document.getElementById("yuyue-center").style.width = "25%";
+        //     };
+        //执行方法
+            // resizeWorldMapContainer();
+        option = {
+            title:{
+                text:'预约方式',
+                top:'top',
+                left:'left',
+                textStyle:{
+                    fontSize: 14,
+                    // fontWeight: '',
+                    color: '#fff'
+                },
+            },//标题
+            color:['#00ffed','#80c26a','#4479fd','#ec697b'],
+            tooltip: {
+                show:true,
+                trigger: 'item',
+                formatter: "{a} <br/>{b}: {c} ({d}%)"
+            },
+            legend: {
+                show:true,
+                orient: 'horizontal',
+                top:20,
+                align: 'auto',
+                data:['电话预约','自助预约','诊间预约','第三方'],
+                textStyle:{
+                    // fontSize: 14,
+                    // fontWeight: '',
+                    color: '#fff'
+                },
+                // backgroundColor:'red'
+                // padding:0
+                // itemGap:30,
+                itemWidth:10,
+                itemHeight:10
+            },
+            series: [
+                {
+                    name:'访问来源',
+                    type:'pie',
+                    // left:20,
+                    radius: ['25%', '45%'],
+                    avoidLabelOverlap: false,
+                    label: {
+                        normal: {
+                            show: true,
+                            position: 'outside',
+                            formatter: '{d}%',
+                            textStyle:{fontSize:"10"},
+                        },
+                        emphasis: {
+                            show: true,
+                            textStyle: {
+                                fontSize: '10'
+                                // fontWeight: 'bold'
+                            }
+                        }
+                    },
+                    labelLine: {
+                        normal: {
+                            show: true,
+                            // offset:[50,80],
+                            lineStyle:{color:'#cff5ff'}
+                        }
+                    },
+                    data:[
+                        {value:221.6, name:'电话预约'},
+                        {value:389.2, name:'自助预约'},
+                        {value:153.6, name:'诊间预约'},
+                        {value:235.6, name:'第三方'}
+                        
+                    ]
+                }
+            ]
+        };
+        option2 = {
+                title:{
+                    text:'医疗机构满意度排名',
+                    top:'top',
+                    left:'left',
+                    textStyle:{
+                        fontSize: 14,
+                        // fontWeight: '',
+                        color: '#fff'
+                    },
+                },//标题
+                color:'#0fbb27',
+               
+                textStyle:{                 //----图例内容样式
+                    color:'#fff', 
+                    fontSize:10              //---所有图例的字体颜色
+                    //backgroundColor:'black',  //---所有图例的字体背景色
+                }, 
+                xAxis: {
+                    type: 'category',
+                    data: ['湖州中心医院', '妇幼保健医院', '湖州中心医院', '中医医院', '湖州中心医院', '第一人民医院'],
+                    axisLabel:{
+                        // formatter:function(value){
+                        //     return value.split("").join("\n");
+                        // },
+                        rotate:"45",
+                        fontSize:8,
+                        // margin:30,
+                        // align:'left'
+                        interval:0
+                    },
+                },
+                yAxis: {
+                    type: 'value',
+                    
+                   
+                },
+                grid:{
+                    // x: 100,
+                    top:35,
+                    bottom:45,  
+                    // y2: 200    
+                },
+                series: [{
+                    data: [94.5, 89.5, 82.3, 75.3, 72.3,57.3],
+                    barWidth: 20,
+                    itemStyle: {
+							normal: {
+								label: {
+									show: true, //开启显示
+									position: 'top', //在上方显示
+									textStyle: { //数值样式
+										color: '#fff',
+										fontSize: 10
+									}
+								}
+							}
+						},
+                    type: 'bar'
+                }]
+            };
+            option3 = {
+                    tooltip : {
+                        trigger: 'item',
+                        formatter: "{a} <br/>{b} : {c} ({d}%)"
+                    },
+                    color:['#00ffea','#ffb650','#4479fd','#4479fd'],
+                    legend: {
+                        orient: 'vertical',
+                        top:10,
+                        right: 20,
+                        data: ['电话','问卷','短信','窗口评价'],
+                        textStyle:{
+                    // fontSize: 14,
+                    // fontWeight: '',
+                    color: '#fff'
+                },
+                        itemWidth:10,
+                        itemHeight:10
+                    },
+                    calculable : true,
+                    series : [
+                        {
+                            name: '访问来源',
+                            type: 'pie',
+                            radius : '75%',
+                            center: ['30%', '60%'],
+                            data:[
+                                {value:221.6, name:'电话'},
+                                {value:389.2, name:'问卷'},
+                                {value:153.6, name:'短信'},
+                                {value:235.6, name:'窗口评价'}
+                            ],
+                            label: {
+                                    normal: {
+                                        show: true,
+                                        position: 'outside',
+                                        formatter: '{d}%',
+                                        textStyle:{fontSize:"10"},
+                                    }
+                                },
+                            // itemStyle: {
+                            //     emphasis: {
+                            //         shadowBlur: 10,
+                            //         shadowOffsetX: 0,
+                            //         shadowColor: 'rgba(0, 0, 0, 0.5)'
+                            //     }
+                            // }
+                        }
+                    ]
+                };
+
+        option4 = {
+                title:{
+                    text:'累计金额排名前五机构',
+                    top:'top',
+                    left:'left',
+                    textStyle:{
+                        fontSize: 14,
+                        // fontWeight: '',
+                        color: '#fff'
+                    },
+                },//标题
+                color:'#00ceff',
+               
+                textStyle:{                 //----图例内容样式
+                    color:'#fff', 
+                    fontSize:10              //---所有图例的字体颜色
+                    //backgroundColor:'black',  //---所有图例的字体背景色
+                }, 
+                xAxis: {
+                    type: 'category',
+                    data: ['湖州中心医院', '妇幼保健医院', '湖州中心医院', '中医医院', '湖州中心医院'],
+                    axisLabel:{
+                        // formatter:function(value){
+                        //     return value.split("").join("\n");
+                        // },
+                        rotate:"45",
+                        fontSize:8,
+                        // margin:30,
+                        // align:'left'
+                        interval:0
+                    },
+                },
+                yAxis: {
+                    type: 'value',
+                   
+                },
+                grid:{
+                    // x: 100,
+                    top:35,
+                    bottom:45,  
+                    // y2: 200    
+                },
+                series: [{
+                    data: [94.5, 89.5, 75.3, 72.3,57.3],
+                    barWidth: 20,
+                    itemStyle: {
+							normal: {
+								label: {
+									show: true, //开启显示
+									position: 'top', //在上方显示
+									textStyle: { //数值样式
+										color: '#fff',
+										fontSize: 10
+									}
+								}
+							}
+						},
+                    type: 'bar'
+                }]
+            };
+            option5 = {
+                title: {
+                    text:'近半年趋势图',
+                    top:'top',
+                    left:'left',
+                    textStyle:{
+                        fontSize: 14,
+                        // fontWeight: '',
+                        color: '#fff'
+                    }
+                },
+                
+                color:['#45c9bb','#eb6775','#f8a642'],
+                textStyle:{                 //----图例内容样式
+                    color:'#fff', 
+                    fontSize:10              //---所有图例的字体颜色
+                    //backgroundColor:'black',  //---所有图例的字体背景色
+                }, 
+                tooltip: {
+                    trigger: 'axis'
+                },
+                legend: {
+                    show:true,
+                    top:20,
+                    icon:'stack',
+                    data:['临检','心电图','影像'],
+                    textStyle:{                 //----图例内容样式
+                            color:'#fff', 
+                            fontSize:10              //---所有图例的字体颜色
+                            //backgroundColor:'black',  //---所有图例的字体背景色
+                     },
+                     itemWidth:10,
+                     itemHeight:10
+                },
+                grid: {
+                    left: '3%',
+                    right: '4%',
+                    bottom: '3%',
+                    containLabel: true,
+                    backgroundColor:'#06448d'
+                },
+                // toolbox: {
+                //     feature: {
+                //         saveAsImage: {}
+                //     }
+                // },
+                xAxis: {
+                    type: 'category',
+                    boundaryGap: false,
+                    data: ['1月','2月','3月','4月','5月','6月']
+                },
+                yAxis: {
+                    type: 'value',
+                    name:'万'
+                },
+                series: [
+                    {
+                        name:'临检',
+                        type:'line',
+                        symbol: "none",
+                        // stack: '总量',
+                        data:[0.6, 0.9, 0.7, 1.3, 0.75, 0.9]
+                    },
+                    {
+                        name:'心电图',
+                        type:'line',
+                        symbol: "none",
+                        // stack: '总量',
+                        data:[0.9, 0.7, 0.95, 0.63, 1.1, 1.05]
+                    },
+                    {
+                        name:'影像',
+                        type:'line',
+                        symbol: "none",
+                        // stack: '总量',
+                        data:[0.7, 0.58, 0.67, 1.0, 0.86, 0.64]
+                    },
+                ]
+            }
+        circle.setOption(option);
+        zhu.setOption(option2);
+        zhu1.setOption(option4);
+        circle1.setOption(option3);
+        zhe.setOption(option5);
+        $(window).resize(function(){
+            circle.resize();
+            zhu.resize();
+            zhu1.resize();
+            circle1.resize();
+            zhe.resize();
+        });
+    </script>

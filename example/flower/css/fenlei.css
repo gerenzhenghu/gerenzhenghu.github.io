@@ -1,0 +1,140 @@
+@charset "UTF-8";
+body, h1, h2, h3, h4, h5, h6, ol, ul, dl, dd, p, input, select, textarea, td {
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 26.67vw; }
+
+body {
+  font-family: "微软雅黑";
+  /*position: relative;*/ }
+
+a {
+  text-decoration: none; }
+
+ul,
+ol {
+  list-style: none; }
+
+img {
+  border: 0;
+  display: block; }
+
+html,
+body {
+  height: 100%;
+  background: #f1f3f6; }
+
+i {
+  font-style: normal; }
+
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: .44rem;
+  background: #fff; }
+  header > img {
+    width: .2rem;
+    height: .2rem;
+    margin-left: .14rem;
+    margin-right: .14rem; }
+  header .hed {
+    width: 3.07rem;
+    height: .36rem;
+    background: #e9ecf0;
+    border-radius: .03rem;
+    overflow: hidden;
+    padding-right: .16rem; }
+    header .hed .txt {
+      float: left;
+      width: 2.71rem;
+      height: .36rem;
+      font-size: .13rem;
+      color: #7f8285;
+      border: 0;
+      background: #e9ecf0; }
+    header .hed .bnt {
+      width: .36rem;
+      height: .36rem;
+      float: left;
+      border: 0;
+      background: url(../img/top2.png) no-repeat center; }
+
+section {
+  margin-top: .02rem;
+  display: flex; }
+  section .section-left {
+    height: 5.74rem;
+    width: 25%;
+    margin-right: .02rem;
+    background: #fff; }
+  section .active::before {
+    content: "";
+    float: left;
+    width: .02rem;
+    height: .32rem;
+    background: #FF734C;
+    margin-top: .1rem; }
+  section p {
+    font-size: .14rem;
+    height: .56rem;
+    line-height: .56rem;
+    text-align: center; }
+    section p a {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      height: .56rem;
+      line-height: .56rem;
+      text-align: center;
+      color: #232628; }
+  section .active a {
+    color: #FF734C !important; }
+  section .section-right {
+    height: 5.74rem;
+    width: 75%;
+    background: #fff; }
+    section .section-right .section-mode {
+      height: 4.80rem;
+      padding: .08rem .08rem .16rem .08rem; }
+      section .section-right .section-mode .section-banner {
+        height: .88rem;
+        background: url(../img/19_womanday_all_m.jpg) no-repeat;
+        background-size: cover; }
+      section .section-right .section-mode .section-flower-list {
+        display: flex;
+        flex-wrap: wrap; }
+        section .section-right .section-mode .section-flower-list div {
+          width: 33.333333%;
+          padding: .08rem 0;
+          text-align: center; }
+          section .section-right .section-mode .section-flower-list div a img {
+            width: .56rem;
+            height: .56rem;
+            margin: 0 auto; }
+          section .section-right .section-mode .section-flower-list div span {
+            font-size: .12rem;
+            color: #727375;
+            display: block; }
+
+nav {
+  display: flex;
+  background: #f7f9fa;
+  width: 100%;
+  height: .49rem;
+  justify-content: space-around;
+  align-items: center; }
+  nav a {
+    text-align: center; }
+    nav a img {
+      margin: 0 auto;
+      width: .26rem;
+      height: .26rem; }
+    nav a span {
+      display: block;
+      font-size: .12rem;
+      color: #304c66; }
+  nav a:nth-child(2) span {
+    color: #ff734c; }

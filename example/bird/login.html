@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/login.css">
+</head>
+<body>
+	<div class="header"></div>
+	<div class="set">
+		<div class="set-center">
+			<div class="set-righ">
+				<div class="set-tite">
+					<p>会员登录</p>
+					<a href="##">快速注册</a>
+				</div>
+				<ul>
+					<li class="tips"></li>
+					<li class="shuru phone1"><input type="text" placeholder="用户名" /></li>
+					<li class="tips"></li>
+					<li class="shuru phone3"><input type="password" placeholder="密码"></li>
+					<li class="tips"></li>
+					<li>
+						<p class="check">
+							<input class="zd" type="checkbox">
+							<span class="zlogin">自动登录</span>
+							<a class="wjma" href="##">忘记密码</a>
+						</p>	
+					</li>
+					<li class="tips"></li>
+					<li><div class="regBtn">登录</div></li>
+				</ul>
+				<div class="fx">
+					<a href="##"></a>
+					<a href="##"></a>
+					<a href="##"></a>
+					<a href="##"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="foot">
+		
+	</div>
+</body>
+</html>
+<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+<script type="text/javascript" src="js/login.js"></script>
+<script type="text/javascript">
+
+
+$(function () {
+	$(".header").load("top.html");
+	$(".phone").mouseover(function(){
+		$(this).addClass("on");
+	})
+	$(".phone").mouseout(function(){
+		$(this).removeClass("on");
+	})
+
+	$(".foot").load("footer.html");
+	
+});
+</script>
